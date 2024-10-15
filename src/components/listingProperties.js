@@ -78,7 +78,7 @@ const ListingProperties = () => {
         transition={{ duration: 0.9, ease: 'easeIn' }}
     >
         <div className='xl:px-5 px-20 mt-36 max-sm:px-2'>
-            <h1 className='text-[2.875rem] font-merriweather text-center'>Discover Our Featured Listings</h1>
+            <h1 className='text-[2.875rem] max-sm:text-2xl font-merriweather text-center'>Discover Our Featured Listings</h1>
             <div className='mt-20'>
                 <div className='flex justify-evenly max-sm:flex-col max-sm:gap-4'>
                     {list.map((item, index) => (

@@ -11,7 +11,7 @@ const StoryContent = () => {
         transition={{ duration: 0.9, ease: 'easeIn' }}
     >
             <div className="mt-52 px-20 max-sm:px-2">
-                <h1 className="text-[45px] font-playfair">The Standard of Excellence</h1>
+                <h1 className="text-[45px] max-sm:text-2xl font-playfair">The Standard of Excellence</h1>
                 <p className="text-lg font-playfair text-gray-500">70 YEARS OF BESPOKE SERVICE BEHIND YOUR LISTING.</p>
 
                 <div className='flex row gap-14 p-10 mt-20 max-sm:flex-col max-sm:p-0'>

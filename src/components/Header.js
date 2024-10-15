@@ -53,7 +53,7 @@ const currentPath = location.pathname; // Get the current path
     <div>
       {/* mobile screen */}
       <div className={`flex md:hidden w-full xl:text-lg items-center px-3 justify-between z-30  ${isScrolled ? 'bg-white shadow-md text-[#545350] fixed' : 'bg-transparent text-white fixed'}`}>
-      <img src={ isScrolled ? balcklogo : logo} width={150} alt='logo' className=''></img>
+      <img src={ isScrolled ? balcklogo : logo} width={150} alt='logo' className='' onClick={()=>navigate('/')}></img>
       <button className='p-2 border-gray-400 border' onClick={() => setIsOpen(!isOpen)}>Menu</button>
 
       {/* Sidebar */}
@@ -65,7 +65,7 @@ const currentPath = location.pathname; // Get the current path
       >
         <h2 className="text-2xl mb-4 text-end font-bold text-gray-500 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>x</h2>
         <ul className='text-start text-gray-500 text-2xl font-bold'>
-        <li className='p-2 cursor-pointer'>BUY</li>
+        <li className='p-2 cursor-pointer'onClick={() => navigate('/buy')}>BUY</li>
         <li className='p-2 cursor-pointer'>SELL</li>
         <li className='p-2 cursor-pointer' >OUR TEAM</li>
         <li className='p-2 cursor-pointer'> OUR STORY</li>
@@ -75,7 +75,7 @@ const currentPath = location.pathname; // Get the current path
       </motion.div>
     </div>
 
-    <div className={`lg:flex w-full xl:text-lg items-center px-48 justify-between xl:px-20 z-30 fixed 
+    <div className={`lg:flex max-sm:hidden w-full xl:text-lg items-center px-48 justify-between xl:px-20 z-30 fixed 
       ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'} 
       ${isPropertyPage ? 'text-black' : isScrolled ? 'text-[#545350]' : 'text-white'}`}
 

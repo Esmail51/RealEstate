@@ -5,7 +5,7 @@ const BlogContent = () => {
     return (
         <div className="p-10 flex flex-col w-full gap-5 mt-36 max-sm:p-2">
             <div className="flex flex-col mb-28">
-                <h1 className="text-[45px] font-playfair">Recent Blog Posts</h1>
+                <h1 className="text-[45px] max-sm:text-2xl  font-playfair">Recent Blog Posts</h1>
                 <p className="text-lg font-playfair text-gray-500">View featured blog posts from our local experts.</p>
             </div>
 
